@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CifrarDescifrar"
+    tools:layout_editor_absoluteX="-1dp"
+    tools:layout_editor_absoluteY="-49dp">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:text="ENCRIPTAR/DESENCRIPTAR"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtInput"
+        android:layout_width="400sp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="135dp"
+        android:layout_weight="1"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/btnBack"
+        android:layout_width="110sp"
+        android:layout_height="50sp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="307dp"
+        android:layout_weight="1"
+        android:backgroundTint="#FF9800"
+        android:onClick="Regresar"
+        app:srcCompat="?attr/actionModeCopyDrawable"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/btnCopiar1"
+        android:layout_width="110sp"
+        android:layout_height="50sp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="149dp"
+        android:layout_marginBottom="308dp"
+        android:layout_weight="1"
+        android:backgroundTint="#FF9800"
+        android:onClick="Copiar2"
+        app:srcCompat="?attr/actionModeCopyDrawable"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/btnCheck"
+        android:layout_width="110sp"
+        android:layout_height="50sp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="261dp"
+        android:layout_marginBottom="308dp"
+        android:layout_weight="1"
+        android:backgroundTint="#FF9800"
+        android:onClick="Check"
+        app:srcCompat="@android:drawable/stat_notify_sync"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+    <RadioButton
+        android:id="@+id/rb1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="225dp"
+        android:layout_marginBottom="465dp"
+        android:checked="false"
+        android:text="Encriptar" />
+
+    <RadioButton
+        android:id="@+id/rb2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="213dp"
+        android:layout_marginBottom="465dp"
+        android:checked="false"
+        android:text="Desencriptar" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="108dp"
+        android:text="Ingrese el texto:" />
+
+    <EditText
+        android:id="@+id/txtResul"
+        android:layout_width="250sp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="145dp"
+        android:layout_marginBottom="395dp"
+        android:layout_weight="1"
+        android:ems="10"
+        android:hint="RESULTADO: "
+        android:inputType="textPersonName"
+        tools:ignore="TouchTargetSizeCheck"
+        tools:layout_editor_absoluteX="15dp"
+        tools:layout_editor_absoluteY="431dp" />
+
+</RelativeLayout>
